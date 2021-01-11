@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background-color: rgb(88, 131, 211);
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif
+}
+
+.navbar>img {
+  height: 25px;
+}
+
+#transaction-list {
+  height: 70vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.text-white{
+  color: white;
+}
+
+input {
+  text-align: center;
+}
+
+select {
+  text-align-last: center;
+  text-align: center;
+}
+
+.transaction{
+  text-align: center;
+  cursor: pointer;
+}
+
+.transaction-income {
+  color: green;
+}
+.transaction-expense {
+  color: rgb(226, 111, 111);
+}
+
+
+.transaction:hover{
+  background-color: hsl(0, 0%, 95%);
+  transform: scale(1.05);
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+
+.typed-canvas {
+  display: flex;
+  flex-direction: column;
+  background-color: #3a3937;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 150px;
+  padding: 10px;
+}
+
+.typed-span-title {
+  font-size: 1.5rem;
+}
+
+.typed-span {
+  font-size: 1rem;
+  height: 50%;
+  color: white;
+  font-size: larger;
+}
+
+#loading-panel {
+  height: 70vh;
+  align-items: center;
+}
+
+.no-transactions-panel {
+  background-color: rgb(162, 205, 205);
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.insights-panel {
+  display: flex;
+  background-color: lightblue;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3em;
+}
